@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+div {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	color: hsl(229, 23%, 23%);
+	font-size: 18px;
+	font-family: 'Kumbh Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 0.5rem;
+}
+
+p {
+	margin: 0;
+}
+
+small {
+	display: block;
+	font-size: 9px;
+	letter-spacing: 2px;
+	color: hsl(227, 10%, 46%);
+}
+
+.site-main {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background-color: hsl(185, 75%, 39%);
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	z-index: 100;
+	padding-left: 1.3333rem;
+	padding-right: 1.3333rem;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col {
+	flex: 0 0 33.3333%;
+	max-width: 33.3333%;
+}
+
+.card {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-radius: 1rem;
+}
+
+.card-header {
+	position: relative;
+	height: 140px;
+	border-radius: 15px 15px 0 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url('./images/bg-pattern-card.svg');	
+}
+
+.card-header__image {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	border-radius: 100%;
+	border: 5px solid #fff;
+	transform: translate(-50%, -50%);
+}
+
+.card-body {
+	padding: 72px 22px 23px;
+	background-color: #fff;
+}
+
+.card-body__name {
+	display: inline-block;
+	font-size: 1rem;
+	margin-bottom: 8px;
+}
+
+.card-body__age {
+	display: inline-block;
+	margin-left: 5px;
+	color: hsl(227, 10%, 46%);
+}
+
+.card-body__town {
+	font-size: 14px;
+	color: hsl(227, 10%, 46%);
+}
+
+.card-footer {
+	padding: 24px 15px;
+	background-color: #fff;
+	border-radius: 0 0 15px 15px;
+	border-top: 1px solid hsl(0, 0%, 91%);
+}
+
+.card-footer strong {
+	display: block;
+	letter-spacing: 0.5px;
+	margin-bottom: 5px;
+}
+
+@media screen and (min-width: 768px) {
+	.card {
+		max-width: 350px;
+	}
+
+	.card-footer {
+		padding: 24px 26px;
+	}
+}
